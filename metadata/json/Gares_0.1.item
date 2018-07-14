@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_PaAr0X1GEeiADrzjL1lfNA" name="Gares" dataPackage="_PaAr2H1GEeiADrzjL1lfNA" JSONFilePath="G:/epita/data/liste-des-gares.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_PaAr0n1GEeiADrzjL1lfNA" LimitBoucle="50" AbsoluteXPathQuery="$[*]">
+      <schemaTargets xmi:id="_PaAr031GEeiADrzjL1lfNA" RelativeXPathQuery="fields.code_uic" TagName="code_uic"/>
+      <schemaTargets xmi:id="_PaAr1H1GEeiADrzjL1lfNA" RelativeXPathQuery="fields.libelle_gare" TagName="libelle_gare"/>
+      <schemaTargets xmi:id="_PaAr1X1GEeiADrzjL1lfNA" RelativeXPathQuery="fields.fret" TagName="fret"/>
+      <schemaTargets xmi:id="_PaAr1n1GEeiADrzjL1lfNA" RelativeXPathQuery="geometry.coordinates[0]" TagName="lon"/>
+      <schemaTargets xmi:id="_PaAr131GEeiADrzjL1lfNA" RelativeXPathQuery="geometry.coordinates[1]" TagName="lat"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_PaAr2H1GEeiADrzjL1lfNA" name="default" dataManager="_PaAr0X1GEeiADrzjL1lfNA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_PaAr2X1GEeiADrzjL1lfNA" id="__LRzYH1FEeiADrzjL1lfNA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PaAr2n1GEeiADrzjL1lfNA" label="code_uic" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PaAr231GEeiADrzjL1lfNA" label="libelle_gare" length="33" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PaAr3H1GEeiADrzjL1lfNA" label="fret" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PaAr3X1GEeiADrzjL1lfNA" label="lon" length="22" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PaAr3n1GEeiADrzjL1lfNA" label="lat" length="18" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
